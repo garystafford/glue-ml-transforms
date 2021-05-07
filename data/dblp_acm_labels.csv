@@ -1,0 +1,151 @@
+labeling_set_id,label,id,title,authors,venue,year,source
+0,0,671000,1-Safe Algorithms for Symmetric Site Configurations,"Rune Humborstad, Maitrayi Sabaratnam, Svein-Olaf Hvasshovd, &#216;ystein Torbj&#248;rnsen",Very Large Data Bases,1997,ACM
+0,0,conf/vldb/HumborstadSHT97,1-Safe Algorithms for Symmetric Site Configurations,"Maitrayi Sabaratnam, ÿystein Torbj¯rnsen, Rune Humborstad, Svein-Olaf Hvasshovd",VLDB,1997,DBLP
+0,1,journals/sigmod/Chamberlin03,2003 SIGMOD Innovations Award Speech,Donald D. Chamberlin,SIGMOD Record,2003,DBLP
+0,2,conf/vldb/JohnsonS94,2Q: A Low Overhead High Performance Buffer Management Replacement Algorithm,"Dennis Shasha, Theodore Johnson",VLDB,1994,DBLP
+0,2,672996,2Q: A Low Overhead High Performance Buffer Management Replacement Algorithm,"Theodore Johnson, Dennis Shasha",Very Large Data Bases,1994,ACM
+0,3,journals/sigmod/CoxEH96,3D Geographic Network Displays,"Taosong He, Stephen G. Eick, Kenneth C. Cox",SIGMOD Record,1996,DBLP
+0,3,245901,3D geographic network displays,"Kenneth C. Cox, Stephen G. Eick, Taosong He",ACM SIGMOD Record ,1996,ACM
+0,4,conf/sigmod/LahiriJJC98,"50,000 Users on an Oracle8 Universal Server Database","Ashok Josji, Tirthankar Lahiri, Amit Jasuja, Sumanta Chatterjee",SIGMOD Conference,1998,DBLP
+0,4,276366,"50,000 users on an Oracle8 universal server database","Tirthankar Lahiri, Ashok Joshi, Amit Jasuja, Sumanta Chatterjee",International Conference on Management of Data,1998,ACM
+0,5,conf/vldb/DeenJNNW00,A 20/20 Vision of the VLDB-2020?,"Shamkant B. Navathe, Erich J. Neuhold, Gio Wiederhold, Anant Jhingran, S. Misbah Deen",VLDB,2000,DBLP
+0,5,671702,A 20/20 Vision of the VLDB-2020?,"S. Misbah Deen, Anant Jhingran, Shamkant B. Navathe, Erich J. Neuhold, Gio Wiederhold",Very Large Data Bases,2000,ACM
+0,6,conf/vldb/Uhl02,A Bandwidth Model for Internet Search,Axel Uhl,VLDB,2002,DBLP
+0,7,775455,A Bayesian decision model for cost optimal record matching,"V. S. Verykios, G. V. Moustakides, M. G. Elfeky",The VLDB Journal &mdash; The International Journal on Very Large Data Bases ,2003,ACM
+0,7,journals/vldb/VerykiosME03,A Bayesian decision model for cost optimal record matching,"George V. Moustakides, Vassilios S. Verykios, Mohamed G. Elfeky",VLDB J.,2003,DBLP
+0,8,journals/sigmod/LaenderRST02,A Brief Survey of Web Data Extraction Tools,"Berthier A. Ribeiro-Neto, Alberto H. F. Laender, Altigran Soares da Silva, Juliana S. Teixeira",SIGMOD Record,2002,DBLP
+0,9,conf/vldb/RamamurthyDS02,A Case for Fractured Mirrors,"Ravishankar Ramamurthy, Qi Su, David J. DeWitt",VLDB,2002,DBLP
+0,10,journals/sigmod/KeetonPH98,A Case for Intelligent Disks (IDISKs),"Kimberly Keeton, Joseph M. Hellerstein, David A. Patterson",SIGMOD Record,1998,DBLP
+0,11,conf/vldb/PantiSG00,A Case-Based Approach to Information Integration,"Maurizio Panti, Alberto Giretti, Luca Spalazzi",VLDB,2000,DBLP
+0,11,671693,A Case-Based Approach to Information Integration,"Maurizio Panti, Luca Spalazzi, Alberto Giretti",Very Large Data Bases,2000,ACM
+0,12,conf/sigmod/ReissK03,A Characterization of the Sensitivity of Query Optimization to Storage Access Cost Parameters,"Tapas Kanungo, Frederick Reiss",SIGMOD Conference,2003,DBLP
+0,13,conf/sigmod/PopaDST00,A Chase Too Far?,"Val Tannen, Arnaud Sahuguet, Alin Deutsch, Lucian Popa",SIGMOD Conference,2000,DBLP
+0,14,journals/sigmod/Hanna95,A Close Look at the IFO Data Model,Magdy S. Hanna,SIGMOD Record,1995,DBLP
+0,15,conf/vldb/DattaDTVRF01,A Comparative Study of Alternative Middle Tier Caching Solutions to Support Dynamic Web Content Acceleration,"Anindya Datta, Kaushik Dutta, Helen M. Thomas, Debra E. VanderMeer, Krithi Ramamritham, Dan Fishman",VLDB,2001,DBLP
+0,15,672364,A Comparative Study of Alternative Middle Tier Caching Solutions to Support Dynamic Web Content Acceleration,"Anindya Datta, Kaushik Dutta, Helen M. Thomas, Debra E. VanderMeer, Krithi Ramamritham, Dan Fishman",Very Large Data Bases,2001,ACM
+0,16,conf/sigmod/BlohsfeldKS99,A Comparison of Selectivity Estimators for Range Queries on Metric Attributes,"Bernhard Seeger, Bjˆrn Blohsfeld, Dieter Korus",SIGMOD Conference,1999,DBLP
+0,17,journals/sigmod/MedskerCS95,A Comparison of Three User Interfaces to Relational Microcomputer Data Bases,"Carl Medsker, Margaret Christensen, Il-Yeol Song",SIGMOD Record,1995,DBLP
+0,18,journals/vldb/DeyBS96,A Complete Temporal Relational Algebra,"Debabrata Dey, Veda C. Storey, Terence M. Barron",VLDB J.,1996,DBLP
+0,19,journals/sigmod/ReichB98,A Componentized Architecture for Dynamic Electronic Markets,"Israel Ben-Shaul, Benny Reich",SIGMOD Record,1998,DBLP
+0,20,conf/sigmod/DeHaanTCO03,A Comprehensive XQuery to SQL Translation using Dynamic Interval Encoding,"M. Tamer ÷zsu, David Toman, Mariano P. Consens, David DeHaan",SIGMOD Conference,2003,DBLP
+0,21,journals/sigmod/BusslerFM02,A Conceptual Architecture for Semantic Web Enabled Web Services,"Dieter Fensel, Alexander Maedche, Christoph Bussler",SIGMOD Record,2002,DBLP
+0,22,journals/vldb/MuckP97,A Configrable Type Hierarchy Index for OODB,"Thomas A. M¸ck, Martin L. Polaschek",VLDB J.,1997,DBLP
+0,23,journals/sigmod/JensenCEGHJ94,A Consensus Glossary of Temporal Database Concepts,"Shashi K. Gadia, Christian S. Jensen, Patrick J. Hayes, Ramez Elmasri, Sushil Jajodia, James Clifford",SIGMOD Record,1994,DBLP
+0,24,journals/sigmod/RosenthalHRS97,A Consumer Viewpoint on Mediator Languages - a Proposal for a Standard,"Eric Hughes, Leonard J. Seligman, Arnon Rosenthal, Scott Renner",SIGMOD Record,1997,DBLP
+0,25,conf/sigmod/OConnellISWABCCLPWW96,A Content-Based Multimedia Server for Massively Parallel Architectures,"C. Watson, G. Linderman, Euthimios Panagos, T. Walters, Ion Tim Ieong, Alexandros Biliris, J. Wang, S. Choo, David Schrader, P. Colin, William O'Connell, Grace Au",SIGMOD Conference,1996,DBLP
+0,26,673169,A Cost Model for Clustered Object-Oriented Databases,"Georges Gardarin, Jean-Robert Gruser, Zhao-Hui Tang",Very Large Data Bases,1995,ACM
+0,26,conf/vldb/GardarinGT95,A Cost Model for Clustered Object-Oriented Databases,"Zhao-Hui Tang, Jean-Robert Gruser, Georges Gardarin",VLDB,1995,DBLP
+0,27,conf/sigmod/BerensonBGMOO95,A Critique of ANSI SQL Isolation Levels,"Philip A. Bernstein, Patrick E. O'Neil, Hal Berenson, Elizabeth J. O'Neil, Jim Melton, Jim Gray",SIGMOD Conference,1995,DBLP
+0,28,conf/sigmod/NgLK98,A Data Mining Application: Customes Retention at the Port of Singapore Authority (PSA),"KianSing Ng, Huan Liu, HweeBong Kwah",SIGMOD Conference,1998,DBLP
+0,29,conf/sigmod/ForlizziGNS00,A Data Model and Data Structures for Moving Objects Databases,"Markus Schneider, Enrico Nardelli, Luca Forlizzi, Ralf Hartmut G¸ting",SIGMOD Conference,2000,DBLP
+0,30,conf/vldb/BunemanDHOW95,A Data Transformation System for Biological Data Sources,"Susan B. Davidson, Limsoon Wong, Kyle Hart, Peter Buneman, G. Christian Overton",VLDB,1995,DBLP
+0,30,673160,A Data Transformation System for Biological Data Sources,"Peter Buneman, Susan B. Davidson, Kyle Hart, G. Christian Overton, Limsoon Wong",Very Large Data Bases,1995,ACM
+0,31,conf/vldb/Kotidis01,A Data Warehousing Architecture for Enabling Service Provisioning Process,Yannis Kotidis,VLDB,2001,DBLP
+0,31,672183,A Data Warehousing Architecture for Enabling Service Provisioning Process,Yannis Kotidis,Very Large Data Bases,2001,ACM
+0,32,journals/sigmod/BertinoEH03,A Database Approach to Quality of Service Specification in Video Databases,"Mohand-Said Hacid, Elisa Bertino, Ahmed K. Elmagarmid",SIGMOD Record,2003,DBLP
+0,33,672030,A Database Index to Large Biological Sequences,"Ela Hunt, Malcolm P. Atkinson, Robert W. Irving",Very Large Data Bases,2001,ACM
+0,33,conf/vldb/HuntAI01,A Database Index to Large Biological Sequences,"Robert W. Irving, Ela Hunt, Malcolm P. Atkinson",VLDB,2001,DBLP
+0,34,conf/sigmod/AbiteboulCM95,A Database Interface for File Updates,"Tova Milo, Serge Abiteboul, Sophie Cluet",SIGMOD Conference,1995,DBLP
+0,35,journals/vldb/PapazogluK97,A Database Model for Object Dynamics,"Mike P. Papazoglou, Bernd J. Kr‰mer",VLDB J.,1997,DBLP
+0,36,conf/sigmod/Mohan99,A Database Perspective on Lotus Domino/Notes,C. Mohan,SIGMOD Conference,1999,DBLP
+0,37,671683,A Database Platform for Bioinformatics,Sandeepan Banerjee,Very Large Data Bases,2000,ACM
+1,37,conf/vldb/Banerjee00,A Database Platform for Bioinformatics,Sandeepan Banerjee,VLDB,2000,DBLP
+1,38,conf/vldb/KerstenWFKBC03,A Database Striptease or How to Manage Your Personal Databases,"Michael J. Franklin, Surajit Chaudhuri, Alejandro P. Buchmann, Gerhard Weikum, Daniel A. Keim, Martin L. Kersten",VLDB,2003,DBLP
+1,39,conf/vldb/BaulierBKS98,A Database System for Real-Time Event Aggregation in Telecommunication,"Henry F. Korth, Jerry Baulier, Abraham Silberschatz, Stephen Blott",VLDB,1998,DBLP
+1,39,671167,A Database System for Real-Time Event Aggregation in Telecommunication,"Jerry Baulier, Stephen Blott, Henry F. Korth, Abraham Silberschatz",Very Large Data Bases,1998,ACM
+1,40,conf/vldb/VieiraM03,A Dependability Benchmark for OLTP Application Environments,"Henrique Madeira, Marco Vieira",VLDB,2003,DBLP
+1,41,journals/sigmod/PapianiWDN99,"A Distributed Scientific Data Archive Using the Web, XML and SQL/MED","Alistair N. Dunlop, Jasmin L. Wason, Denis A. Nicole, Mark Papiani",SIGMOD Record,1999,DBLP
+1,42,672202,A Fast Index for Semistructured Data,"Brian Cooper, Neal Sample, Michael J. Franklin, Gisli R. Hjaltason, Moshe Shadmon",Very Large Data Bases,2001,ACM
+1,42,conf/vldb/CooperSFHS01,A Fast Index for Semistructured Data,"Brian Cooper, GÌsli R. Hjaltason, Michael J. Franklin, Neal Sample, Moshe Shadmon",VLDB,2001,DBLP
+1,43,journals/vldb/HansonCDERTX98,A Flexible and Recoverable Client/Server Database Event Notification System,"Chun Xu, Eric N. Hanson, Roxana Dastur, I.-Cheng Chen, Vijay Ramaswamy, Wendy Tan, Kurt Engel",VLDB J.,1998,DBLP
+1,44,conf/vldb/ChirkovaHS01,A Formal Perspective on the View Selection Problem,"Dan Suciu, Rada Chirkova, Alon Y. Halevy",VLDB,2001,DBLP
+1,44,672216,A Formal Perspective on the View Selection Problem,"Rada Chirkova, Alon Y. Halevy, Dan Suciu",Very Large Data Bases,2001,ACM
+1,45,conf/vldb/GyssensL97,A Foundation for Multi-dimensional Databases,"Laks V. S. Lakshmanan, Marc Gyssens",VLDB,1997,DBLP
+1,45,673639,A Foundation for Multi-dimensional Databases,"Marc Gyssens, Laks V. S. Lakshmanan",Very Large Data Bases,1997,ACM
+1,46,conf/sigmod/Aggarwal03,A Framework for Change Diagnosis of Data Streams,Charu C. Aggarwal,SIGMOD Conference,2003,DBLP
+1,47,conf/vldb/AggarwalHWY03,A Framework for Clustering Evolving Data Streams,"Philip S. Yu, Charu C. Aggarwal, Jiawei Han, Jianyong Wang",VLDB,2003,DBLP
+1,48,conf/sigmod/AgrawalW00,A Framework for Expressing and Combining Preferences,"Edward L. Wimmers, Rakesh Agrawal",SIGMOD Conference,2000,DBLP
+1,49,conf/sigmod/GriffinH97,A Framework for Implementing Hypothetical Queries,"Timothy Griffin, Richard Hull",SIGMOD Conference,1997,DBLP
+1,50,journals/sigmod/KennedyMB96,A Framework for Information Visualisation,"Peter J. Barclay, Kenneth J. Mitchell, Jessie B. Kennedy",SIGMOD Record,1996,DBLP
+1,51,journals/sigmod/PitouraB95,A Framework for Providing Consistent and Recoverable Agent-Based Access to Heterogeneous in Mobile Databases,"Bharat K. Bhargava, Evaggelia Pitoura",SIGMOD Record,1995,DBLP
+1,52,journals/sigmod/AbererCH02,A Framework for Semantic Gossiping,"Manfred Hauswirth, Karl Aberer, Philippe CudrÈ-Mauroux",SIGMOD Record,2002,DBLP
+1,53,conf/sigmod/HullZ96,A Framework for Supporting Data Integration Using the Materialized and Virtual Approaches,"Gang Zhou, Richard Hull",SIGMOD Conference,1996,DBLP
+1,54,conf/sigmod/Freeston95,A General Solution of the n-dimensional B-tree Problem,Michael Freeston,SIGMOD Conference,1995,DBLP
+1,55,journals/sigmod/ShanmugasundaramSKKVNT01,A General Techniques for Querying XML Documents using a Relational Database System,"Stratis Viglas, Eugene J. Shekita, Rajasekar Krishnamurthy, Jayavel Shanmugasundaram, Jeffrey F. Naughton, Jerry Kiernan, Igor Tatarinov",SIGMOD Record,2001,DBLP
+1,56,conf/vldb/BerckenSW97,A Generic Approach to Bulk Loading Multidimensional Index Structures,"Bernhard Seeger, Peter Widmayer, Jochen Van den Bercken",VLDB,1997,DBLP
+1,56,671016,A Generic Approach to Bulk Loading Multidimensional Index Structures,"Jochen Van den Bercken, Bernhard Seeger, Peter Widmayer",Very Large Data Bases,1997,ACM
+1,57,conf/sigmod/GillmannWSWW00,A Goal-driven Auto-Configuration Tool for the Distributed Workflow Management System Mentor-lite,"German Shegalov, Gerhard Weikum, Wolfgang Wonner, Michael Gillmann, Jeanine Weiﬂenfels",SIGMOD Conference,2000,DBLP
+1,58,journals/sigmod/Chang03,A Graphical Query Language for Mobile Information Systems,Ya-Hui Chang,SIGMOD Record,2003,DBLP
+1,59,journals/sigmod/Yang94,A Hypertext Query Language for Images,Li Yang,SIGMOD Record,1994,DBLP
+1,60,conf/sigmod/KuhnTS94,A Language Based Multidatabase System,"Konrad Schwarz, eva K¸hn, Thomas Tschernko",SIGMOD Conference,1994,DBLP
+1,61,conf/vldb/MaratheS97,A Language for Manipulating Arrays,"Arunprasad P. Marathe, Kenneth Salem",VLDB,1997,DBLP
+1,61,671002,A Language for Manipulating Arrays,"Arunprasad P. Marathe, Kenneth Salem",Very Large Data Bases,1997,ACM
+1,62,conf/sigmod/DavulcuFKR99,A Layered Architecture for Querying Dynamic Web Content,"Hasan Davulcu, Michael Kifer, I. V. Ramakrishnan, Juliana Freire",SIGMOD Conference,1999,DBLP
+1,63,conf/vldb/SenkulKT02,A Logical Framework for Scheduling Workflows under Resource Allocation Constraints,"Michael Kifer, Pinar Senkul, Ismail H. Toroslu",VLDB,2002,DBLP
+1,64,journals/vldb/AbiteboulCM98,A Logical View of Structured Files,"Tova Milo, Serge Abiteboul, Sophie Cluet",VLDB J.,1998,DBLP
+1,65,672984,A Low-Cost Storage Server for Movie on Demand Databases,"Banu &#214;zden, Alexandros Biliris, Rajeev Rastogi, Abraham Silberschatz",Very Large Data Bases,1994,ACM
+1,65,conf/vldb/OzdenBRS94,A Low-Cost Storage Server for Movie on Demand Databases,"Alexandros Biliris, Banu ÷zden, Abraham Silberschatz, Rajeev Rastogi",VLDB,1994,DBLP
+1,66,journals/sigmod/KiyokiKH94,A Metadatabase System for Semantic Image Search by a Mathematical Model of Meaning,"Yasushi Kiyoki, Takanari Hayama, Takashi Kitagawa",SIGMOD Record,1994,DBLP
+1,67,journals/tods/TendickM94,A Modified Random Perturbation Method for Database Security,"Norman S. Matloff, Patrick Tendick",ACM Trans. Database Syst.,1994,DBLP
+1,68,conf/sigmod/ProcopiucJAM02,A Monte Carlo algorithm for fast projective clustering,"Michael Jones, Pankaj K. Agarwal, T. M. Murali, Cecilia Magdalena Procopiuc",SIGMOD Conference,2002,DBLP
+1,68,564739,A Monte Carlo algorithm for fast projective clustering,"Cecilia M. Procopiuc, Michael Jones, Pankaj K. Agarwal, T. M. Murali",International Conference on Management of Data,2002,ACM
+1,69,journals/sigmod/ErdurD02,A Multi-Agent System Infrastructure for Software Component Market-Place: An Ontological Perspective,"Riza Cenk Erdur, Oguz Dikenelli",SIGMOD Record,2002,DBLP
+1,70,conf/sigmod/AdaliBSS98,A Multi-Similarity Algebra,"V. S. Subrahmanian, Sibel Adali, Maria Luisa Sapino, Piero A. Bonatti",SIGMOD Conference,1998,DBLP
+1,71,journals/sigmod/WenLMZ03,A Multi-paradigm Querying Approach for a Generic Multimedia Database Management System,"Ji-Rong Wen, Qing Li, Wei-Ying Ma, HongJiang Zhang",SIGMOD Record,2003,DBLP
+1,72,conf/vldb/SeifertS02,A Multi-version Cache Replacement and Prefetching Policy for Hybrid Data Delivery Environments,"AndrÈ Seifert, Marc H. Scholl",VLDB,2002,DBLP
+1,73,672968,A Multidatabase System for Tracking and Retrieval of Financial Data,"Munir Cochinwala, John Bradley",Very Large Data Bases,1994,ACM
+1,73,conf/vldb/CochinwalaB94,A Multidatabase System for Tracking and Retrieval of Financial Data,"Munir Cochinwala, John Bradley",VLDB,1994,DBLP
+1,74,conf/sigmod/AdaliSS99,A Multimedia Presentation Algebra,"Maria Luisa Sapino, Sibel Adali, V. S. Subrahmanian",SIGMOD Conference,1999,DBLP
+1,75,conf/vldb/EleftheriouBCDHLPPABDDDGJHLRSVW03,A Nanotechnology-based Approach to Data Storage,"B. Gotsmann, A. Dholakia, G. Cherubini, Walter H‰berle, H. Pozidis, Michel Despont, Richard Stutz, P. B‰chtold, C. Hagleitner, T. R. Albrecht, Hugo E. Rothuizen, Gerd K. Binnig, D. Jubin, A. Pantazi, M. A. Lantz, E. Eleftheriou, Urs D¸rig, T. Loeliger, Peter Vettiger, D. Wiesmann, Ute Drechsler",VLDB,2003,DBLP
+1,76,journals/sigmod/ShinM94,A New Join Algorithm,"Arnold Charles Meltzer, Dong Keun Shin",SIGMOD Record,1994,DBLP
+1,77,conf/sigmod/AggarwalWY99,A New Method for Similarity Indexing of Market Basket Data,"Joel L. Wolf, Charu C. Aggarwal, Philip S. Yu",SIGMOD Conference,1999,DBLP
+2,78,conf/vldb/GotoK02,A New Passenger Support System for Public Transport using Mobile Database Access,"Koichi Goto, Yahiko Kambayashi",VLDB,2002,DBLP
+2,79,673500,A New SQL-like Operator for Mining Association Rules,"Rosa Meo, Giuseppe Psaila, Stefano Ceri",Very Large Data Bases,1996,ACM
+2,79,conf/vldb/MeoPC96,A New SQL-like Operator for Mining Association Rules,"Giuseppe Psaila, Stefano Ceri, Rosa Meo",VLDB,1996,DBLP
+2,80,673137,A Non-Uniform Data Fragmentation Strategy for Parallel Main-Menory Database Systems,"N. Bassiliades, Ioannis P. Vlahavas",Very Large Data Bases,1995,ACM
+2,80,conf/vldb/BassiliadesV95,A Non-Uniform Data Fragmentation Strategy for Parallel Main-Menory Database Systems,"Nick Bassiliades, Ioannis P. Vlahavas",VLDB,1995,DBLP
+2,81,journals/tods/MokNE96,A Normal Form for Precisely Characterizing Redundancy in Nested Relations,"Yiu-Kai Ng, David W. Embley, Wai Yin Mok",ACM Trans. Database Syst.,1996,DBLP
+2,82,conf/vldb/JermaineDO99,A Novel Index Supporting High Volume Data Warehouse Insertion,"Anindya Datta, Chris Jermaine, Edward Omiecinski",VLDB,1999,DBLP
+2,82,671517,A Novel Index Supporting High Volume Data Warehouse Insertion,"Chris Jermaine, Anindya Datta, Edward Omiecinski",Very Large Data Bases,1999,ACM
+2,83,conf/vldb/LeeWMS02,A One-Pass Aggregation Algorithm with the Optimal Buffer Size in Multidimensional OLAP,"Yang-Sae Moon, Young-Koo Lee, Il-Yeol Song, Kyu-Young Whang",VLDB,2002,DBLP
+2,84,conf/vldb/AlsabtiRS97,A One-Pass Algorithm for Accurately Estimating Quantiles for Disk-Resident Data,"Khaled Alsabti, Vineet Singh, Sanjay Ranka",VLDB,1997,DBLP
+2,84,673650,A One-Pass Algorithm for Accurately Estimating Quantiles for Disk-Resident Data,"Khaled Alsabti, Sanjay Ranka, Vineet Singh",Very Large Data Bases,1997,ACM
+2,85,journals/vldb/KamelWS94,A Pattern-Based Object Calculus,"Stanley Y. W. Su, Nabil Kamel, Ping Wu",VLDB J.,1994,DBLP
+2,86,673165,A Performance Evaluation of OID Mapping Techniques,"Andr&#233; Eickler, Carsten Andreas Gerlhof, Donald Kossmann",Very Large Data Bases,1995,ACM
+2,86,conf/vldb/EicklerGK95,A Performance Evaluation of OID Mapping Techniques,"AndrÈ Eickler, Carsten Andreas Gerlhof, Donald Kossmann",VLDB,1995,DBLP
+2,87,conf/sigmod/DarR94,A Performance Study of Transitive Closure Algorithms,"Raghu Ramakrishnan, Shaul Dar",SIGMOD Conference,1994,DBLP
+2,88,673158,A Performance Study of Workfile Disk Management for Concurrent Mergesorts in a Multiprocessor Database System,"Kun-Lung Wu, Philip S. Yu, Jen-Yao Chung, James Z. Teng",Very Large Data Bases,1995,ACM
+2,88,conf/vldb/WuYCT95,A Performance Study of Workfile Disk Management for Concurrent Mergesorts in a Multiprocessor Database System,"Kun-Lung Wu, Philip S. Yu, James Z. Teng, Jen-Yao Chung",VLDB,1995,DBLP
+2,89,journals/sigmod/PourabbasR02,A Pictorial Query Language for Querying Geographic Databases using Positional and OLAP Operators,"Elaheh Pourabbas, Maurizio Rafanelli",SIGMOD Record,2002,DBLP
+2,90,conf/vldb/SrinivasaK03,A Platform Based on the Multi-dimensional Data Model for Analysis of Bio-Molecular Structures,"Srinath Srinivasa, Sujit Kumar",VLDB,2003,DBLP
+2,91,conf/vldb/BargaP95,A Practical and Modular Implementation of Extended Transaction Models,"Roger S. Barga, Calton Pu",VLDB,1995,DBLP
+2,91,673298,A Practical and Modular Implementation of Extended Transaction Models,"Roger S. Barga, Calton Pu",Very Large Data Bases,1995,ACM
+2,92,journals/vldb/KellerB96,A Predicate-based Caching Scheme for Client-Server Database Architectures,"Julie Basu, Arthur M. Keller",VLDB J.,1996,DBLP
+2,93,journals/tods/DeyS96,A Probabilistic Relational Model and Algebra,"Debabrata Dey, Sumit Sarkar",ACM Trans. Database Syst.,1996,DBLP
+2,94,673141,A Product Specification Database for Visual Prototyping,"Kazutoshi Sumiya, Kouichi Yasutake, Hirohiko Tanaka, Norio Sanada, Yoshihiko Imai",Very Large Data Bases,1995,ACM
+2,94,conf/vldb/SumiyaYTSI95,A Product Specification Database for Visual Prototyping,"Kouichi Yasutake, Kazutoshi Sumiya, Yoshihiko Imai, Hirohiko Tanaka, Norio Sanada",VLDB,1995,DBLP
+2,95,conf/sigmod/ChenWZ98,A Protein Patent Query System Powered By Kleisli,"Jing Chen, Louxin Zhang, Limsoon Wong",SIGMOD Conference,1998,DBLP
+2,96,conf/vldb/BrownG01,A Prototype Content-Based Retrieval System that Uses Virtual Images to Save Space,"Leonard Brown, Le Gruenwald",VLDB,2001,DBLP
+2,96,672032,A Prototype Content-Based Retrieval System that Uses Virtual Images to Save Space,"Leonard Brown, Le Gruenwald",Very Large Data Bases,2001,ACM
+2,97,conf/vldb/WeberSB98,A Quantitative Analysis and Performance Study for Similarity-Search Methods in High-Dimensional Spaces,"Stephen Blott, Roger Weber, Hans-Jˆrg Schek",VLDB,1998,DBLP
+2,97,671192,A Quantitative Analysis and Performance Study for Similarity-Search Methods in High-Dimensional Spaces,"Roger Weber, Hans-J&#246;rg Schek, Stephen Blott",Very Large Data Bases,1998,ACM
+2,98,conf/sigmod/BunemanDHS96,A Query Language and Optimization Techniques for Unstructured Data,"Gerd G. Hillebrand, Peter Buneman, Susan B. Davidson, Dan Suciu",SIGMOD Conference,1996,DBLP
+2,99,conf/sigmod/LibkinMW96,"A Query Language for Multidimensional Arrays: Design, Implementation, and Optimization Techniques","Limsoon Wong, Rona Machlin, Leonid Libkin",SIGMOD Conference,1996,DBLP
+2,100,journals/sigmod/FernandezFLS97,A Query Language for a Web-Site Management System,"Dan Suciu, Daniela Florescu, Alon Y. Levy, Mary F. Fernandez",SIGMOD Record,1997,DBLP
+2,101,671196,A Raster Approximation For Processing of Spatial Joins,"Geraldo Zimbrao, Jano Moreira de Souza",Very Large Data Bases,1998,ACM
+2,101,conf/vldb/ZimbraoS98,A Raster Approximation For Processing of Spatial Joins,"Jano Moreira de Souza, Geraldo Zimbrao",VLDB,1998,DBLP
+2,102,671015,A Region Splitting Strategy for Physical Database Design of Multidimensional File Organizations,"Jong-Hak Lee, Young-Koo Lee, Kyu-Young Whang, Il-Yeol Song",Very Large Data Bases,1997,ACM
+2,102,conf/vldb/LeeLWS97,A Region Splitting Strategy for Physical Database Design of Multidimensional File Organizations,"Kyu-Young Whang, Il-Yeol Song, Young-Koo Lee, Jong-Hak Lee",VLDB,1997,DBLP
+2,103,conf/vldb/TengCY03,A Regression-Based Temporal Pattern Mining Scheme for Data Streams,"Philip S. Yu, Wei-Guang Teng, Ming-Syan Chen",VLDB,2003,DBLP
+2,104,conf/vldb/MuntzR94,A Requirement-Based Approach to Data Modeling and Re-Engineering,"Christian T. Ramiller, Alice H. Muntz",VLDB,1994,DBLP
+2,104,672820,A Requirement-Based Approach to Data Modeling and Re-Engineering,"Alice H. Muntz, Christian T. Ramiller",Very Large Data Bases,1994,ACM
+2,105,journals/sigmod/NobleS95,A Research Status Report on Adaptation for Mobile Data Access,"Brian Noble, Mahadev Satyanarayanan",SIGMOD Record,1995,DBLP
+2,106,journals/sigmod/Date96,"A Response to R. Camps' Article ``Domains, Relations and Religious Wars''",C. J. Date,SIGMOD Record,1996,DBLP
+2,107,conf/sigmod/ChaudhuriDN01,"A Robust, Optimization-Based Approach for Approximate Answering of Aggregate Queries","Vivek R. Narasayya, Gautam Das, Surajit Chaudhuri",SIGMOD Conference,2001,DBLP
+2,108,conf/vldb/PottingerL00,A Scalable Algorithm for Answering Queries Using Views,"Rachel Pottinger, Alon Y. Levy",VLDB,2000,DBLP
+2,108,671692,A Scalable Algorithm for Answering Queries Using Views,"Rachel Pottinger, Alon Y. Levy",Very Large Data Bases,2000,ACM
+2,109,conf/vldb/MillinerBP95,A Scalable Architecture for Autonomous Heterogeneous Database Interactions,"Athman Bouguettaya, Steven Milliner, Mike P. Papazoglou",VLDB,1995,DBLP
+2,109,673144,A Scalable Architecture for Autonomous Heterogeneous Database Interactions,"Steven Milliner, Athman Bouguettaya, Mike P. Papazoglou",Very Large Data Bases,1995,ACM
+2,110,671509,A Scalable and Highly Available Networked Database Architecture,"Roger Bamford, Rafiul Ahad, Angelo Pruscino",Very Large Data Bases,1999,ACM
+2,110,conf/vldb/BamfordAP99,A Scalable and Highly Available Networked Database Architecture,"Angelo Pruscino, Rafiul Ahad, Roger Bamford",VLDB,1999,DBLP
+2,111,journals/vldb/ChuIT94,A Semantic Modeling Approach for Image Retrieval by Content,"Ricky K. Taira, Ion Tim Ieong, Wesley W. Chu",VLDB J.,1994,DBLP
