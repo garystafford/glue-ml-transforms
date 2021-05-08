@@ -12,7 +12,10 @@ object GlueApp {
   // ****** CHANGE ME ******
   var mlTransformId :String = "tfm-behuhzsrsnpm3vk8tx2sehmh9owuh8lw88jeuwdz"
   var resultBucket :String = "s3://glue-ml-transform-111222333444-us-east-1"
-  // ***********************
+
+  // ****** OPTIONAL CHANGE ME ******
+  val glueDatabase :String = "demo-db-dblp-acm"
+  val glueTable :String = "dblp_acm_records_csv"
 
   def main(sysArgs: Array[String]) {
     val spark: SparkContext = new SparkContext()
@@ -22,16 +25,16 @@ object GlueApp {
     Job.init(args("JOB_NAME"), glueContext, args.asJava)
 
     val datasource = glueContext.getCatalogSource(
-      database = "demo-db-dblp-acm",
-      tableName = "dblp_acm_records_csv",
+      database = glueDatabase,
+      tableName = glueTable,
       redshiftTmpDir = "",
       transformationContext = "datasource"
     ).getDynamicFrame()
 
     val resolvechoice = datasource.resolveChoice(
       choiceOption = Some(ChoiceOption("MATCH_CATALOG")),
-      database = Some("demo-db-dblp-acm"),
-      tableName = Some("dblp_acm_records_csv"),
+      database = Some(glueDatabase),
+      tableName = Some(glueTable),
       transformationContext = "resolvechoice"
     )
 
