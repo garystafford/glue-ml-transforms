@@ -132,7 +132,7 @@ Resources:
         MaxConcurrentRuns: 1
       Command:
         Name: "glueetl"
-        ScriptLocation: !Sub "s3://aws-glue-scripts-${AWS::AccountId}-${AWS::Region}/admin/demo-etl-dblp-acm"
+        ScriptLocation: !Sub "s3://${ResultsBucket}/demo-etl-dblp-acm"
         PythonVersion: "2"
       DefaultArguments:
         --TempDir: !Sub "s3://aws-glue-temporary-${AWS::AccountId}-${AWS::Region}/admin"

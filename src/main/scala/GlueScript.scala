@@ -34,14 +34,14 @@ object GlueApp {
 
     val findmatches = FindMatches.apply(
       frame = resolvechoice,
-      transformId = "tfm-9758e521c94afe2c93e3d58bb995618a7f2d9d5f",
+      transformId = "tfm-b628091a9d2fac1dbbc9b423ea9e5c3f1dd29480",
       transformationContext = "findmatches")
 
     val single_partition = findmatches.repartition(1)
 
     val datasink = glueContext.getSinkWithFormat(
       connectionType = "s3",
-      options = JsonOptions("""{"path": "s3://glue-ml-transform-results-676164205626-us-east-1"}"""),
+      options = JsonOptions("""{"path": "s3://glue-ml-transform-results-676164205626-us-east-2"}"""),
       transformationContext = "datasink",
       format = "csv"
     ).writeDynamicFrame(single_partition)
