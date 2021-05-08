@@ -8,9 +8,54 @@ Description: >
 Parameters:
   GlueServiceRole:
     Type: String
-    Default: "service-role/AWSGlueServiceRole-demo"
+    Default: "AWSGlueServiceRole-ml-demo"
     Description: Glue service role.
 Resources:
+  IAMManagedPolicy:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      ManagedPolicyName: !Ref GlueServiceRole
+      Path: "/service-role/"
+      PolicyDocument: |
+        {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Sid": "VisualEditor0",
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:*"
+                    ],
+                    "Resource": "arn:aws:s3:::*/*"
+                }
+            ]
+        }
+  IAMRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      Path: "/service-role/"
+      RoleName: !Ref GlueServiceRole
+      AssumeRolePolicyDocument: "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"glue.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}"
+      MaxSessionDuration: 3600
+      ManagedPolicyArns:
+        - "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+        - "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole"
+        - "arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess"
+        - !Sub "arn:aws:iam::${AWS::AccountId}:policy/service-role/${GlueServiceRole}"
+  ResultsBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Sub "glue-ml-transform-results-${AWS::AccountId}-${AWS::Region}"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W51
+            reason: "This is a private bucket. Does not require bucket policy"
   GlueDatabase:
     Type: "AWS::Glue::Database"
     Properties:
@@ -71,7 +116,7 @@ Resources:
     Type: "AWS::Glue::Crawler"
     Properties:
       Name: "demo-crawl-dblp-acm"
-      Role: !Ref GlueServiceRole
+      Role: !Sub "service-role/${IAMRole}"
       Targets:
         S3Targets:
           - Path: !Sub "s3://ml-transforms-public-datasets-${AWS::Region}/dblp-acm/records/dblp_acm_records.csv"
@@ -83,7 +128,7 @@ Resources:
     Type: "AWS::Glue::Job"
     Properties:
       Name: "demo-etl-dblp-acm"
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/${GlueServiceRole}"
+      Role: !GetAtt IAMRole.Arn
       ExecutionProperty:
         MaxConcurrentRuns: 1
       Command:
@@ -113,7 +158,7 @@ Resources:
       MaxRetries: 0
       Name: "demo-xform-dblp-acm"
       NumberOfWorkers: 10
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/${GlueServiceRole}"
+      Role: !GetAtt IAMRole.Arn
       Timeout: 2880
       TransformParameters:
         TransformType: "FIND_MATCHES"

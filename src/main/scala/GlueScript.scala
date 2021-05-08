@@ -41,7 +41,7 @@ object GlueApp {
 
     val datasink = glueContext.getSinkWithFormat(
       connectionType = "s3",
-      options = JsonOptions("""{"path": "s3://demo-lab-05591e78-c7a7-11ea-9e7c-1f5912642e39"}"""),
+      options = JsonOptions("""{"path": "s3://glue-ml-transform-results-676164205626-us-east-1"}"""),
       transformationContext = "datasink",
       format = "csv"
     ).writeDynamicFrame(single_partition)
