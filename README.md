@@ -1,7 +1,6 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Notes and code for the
-AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
+Notes and code for the AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
 
 ## Reference
 
@@ -49,7 +48,9 @@ s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
 
 ### Copy Script to S3
 
+Change S3 bucket name.
 
 ```shell
-aws s3 cp ./src/main/scala/GlueScript.scala s3://glue-ml-transform-results-111222333444-us-east-1/demo-etl-dblp-acm
+aws s3 cp ./src/main/scala/GlueScript.scala \
+  s3://glue-ml-transform-results-111222333444-us-east-1/demo-etl-dblp-acm
 ```
