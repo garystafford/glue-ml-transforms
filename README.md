@@ -14,6 +14,8 @@ AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs
 6. Run 'Estimate transform quality'
 7. Run the Glue Job containing uploaded Scala Glue script
 
+Running the Glue Crawler, included in the CloudFormation Stack, is not required for tutorial.
+
 ## Create CloudFormation Stack
 
 In reference to step #1, above.
