@@ -1,33 +1,24 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Notes and code for the AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
+Notes and sourcecode for the
+AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
+.
 
-## Reference
+## Workflow with this project
 
-- [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
-- [Tuning Machine Learning Transforms in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform-tuning.html)
-- [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
-
-## Process
-
-1. Create CloudFormation Stack
-2. Modify Scala Glue script's `transformId` value and bucket location in `datasink` section
+1. Create the CloudFormation Stack
+2. Modify Scala Glue script's `transformId` value and bucket location in `datasink` section to match your environment
 3. Upload Scala Glue script to new S3 bucket
-4. Run Teach transform
-5. Uploads labels
-6. Estimate transform quality
-7. Run Glue Job containing uploaded Scala Glue script
+4. Run 'Teach transform'
+5. 'Uploads labels'
+6. Run 'Estimate transform quality'
+7. Run the Glue Job containing uploaded Scala Glue script
 
-## Commands
-
-### Optional: Retrieve Datasets from S3.
-
-```shell
-aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/records/dblp_acm_records.csv dblp_acm_records.csv
-aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv dblp_acm_labels.csv
-```
+## Useful Commands
 
 ### Create CloudFormation Stack
+
+In reference to step #1, above.
 
 ```
 aws cloudformation create-stack \
@@ -38,19 +29,34 @@ aws cloudformation create-stack \
     --capabilities CAPABILITY_NAMED_IAM
 ```
 
-## Labeled Dataset Location
-
-Change Region to match your Region.
-
-```txt
-s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
-```
-
 ### Copy Script to S3
 
-Change S3 bucket name.
+In reference to step #3, above. Change S3 bucket name to match your environment.
 
 ```shell
 aws s3 cp ./src/main/scala/GlueScript.scala \
   s3://glue-ml-transform-results-111222333444-us-east-1/demo-etl-dblp-acm
 ```
+
+## Labeled Dataset Location
+
+In reference to step #5, above. Change Region to match your environment.
+
+```txt
+s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
+```
+
+### Optional: Retrieve Datasets from S3.
+
+Retrieve original dataset and labels from S3.
+
+```shell
+aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/records/dblp_acm_records.csv dblp_acm_records.csv
+aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv dblp_acm_labels.csv
+```
+
+## Reference
+
+- [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
+- [Tuning Machine Learning Transforms in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform-tuning.html)
+- [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
