@@ -1,0 +1,126 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Metadata:
+  Generator: "former2"
+Description: >
+  Notes and code for the AWS Tutorial: Creating a Machine Learning Transform with AWS Glue
+  (https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
+  ** Stack does not include Glue data table in database or ML Transform resources
+Parameters:
+  GlueServiceRole:
+    Type: String
+    Default: "service-role/AWSGlueServiceRole-demo"
+    Description: Glue service role.
+Resources:
+  GlueDatabase:
+    Type: "AWS::Glue::Database"
+    Properties:
+      DatabaseInput:
+        Name: "demo-db-dblp-acm"
+      CatalogId: !Ref "AWS::AccountId"
+  GlueTable:
+    Type: "AWS::Glue::Table"
+    Properties:
+      DatabaseName: !Ref GlueDatabase
+      CatalogId: !Ref "AWS::AccountId"
+      TableInput:
+        Owner: "owner"
+        TableType: "EXTERNAL_TABLE"
+        Parameters:
+          areColumnsQuoted: "false"
+          classification: "csv"
+          columnsOrdered: "true"
+          compressionType: "none"
+          delimiter: ","
+          "skip.header.line.count": "1"
+          typeOfData: "file"
+        StorageDescriptor:
+          Columns:
+            - Name: "id"
+              Type: "string"
+            - Name: "title"
+              Type: "string"
+            - Name: "authors"
+              Type: "string"
+            - Name: "venue"
+              Type: "string"
+            - Name: "year"
+              Type: "bigint"
+            - Name: "source"
+              Type: "string"
+          Location: !Sub "s3://ml-transforms-public-datasets-${AWS::Region}/dblp-acm/records/dblp_acm_records.csv"
+          InputFormat: "org.apache.hadoop.mapred.TextInputFormat"
+          OutputFormat: "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"
+          Compressed: false
+          NumberOfBuckets: -1
+          SerdeInfo:
+            SerializationLibrary: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
+            Parameters:
+              "field.delim": ","
+          Parameters:
+            areColumnsQuoted: "false"
+            classification: "csv"
+            columnsOrdered: "true"
+            compressionType: "none"
+            delimiter: ","
+            "skip.header.line.count": "1"
+            typeOfData: "file"
+          StoredAsSubDirectories: false
+        Retention: 0
+        Name: "dblp_acm_records_csv"
+  GlueCrawler:
+    Type: "AWS::Glue::Crawler"
+    Properties:
+      Name: "demo-crawl-dblp-acm"
+      Role: !Ref GlueServiceRole
+      Targets:
+        S3Targets:
+          - Path: !Sub "s3://ml-transforms-public-datasets-${AWS::Region}/dblp-acm/records/dblp_acm_records.csv"
+      DatabaseName: !Ref GlueDatabase
+      SchemaChangePolicy:
+        UpdateBehavior: "UPDATE_IN_DATABASE"
+        DeleteBehavior: "DEPRECATE_IN_DATABASE"
+  GlueJob:
+    Type: "AWS::Glue::Job"
+    Properties:
+      Name: "demo-etl-dblp-acm"
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/${GlueServiceRole}"
+      ExecutionProperty:
+        MaxConcurrentRuns: 1
+      Command:
+        Name: "glueetl"
+        ScriptLocation: !Sub "s3://aws-glue-scripts-${AWS::AccountId}-${AWS::Region}/admin/demo-etl-dblp-acm"
+        PythonVersion: "2"
+      DefaultArguments:
+        --TempDir: !Sub "s3://aws-glue-temporary-${AWS::AccountId}-${AWS::Region}/admin"
+        --class: "GlueApp"
+        --job-bookmark-option: "job-bookmark-disable"
+        --job-language: "scala"
+      MaxRetries: 0
+      AllocatedCapacity: 11
+      Timeout: 2880
+      GlueVersion: "1.0"
+      MaxCapacity: 11
+      NumberOfWorkers: 5
+      WorkerType: "G.2X"
+  GlueMLTransform:
+    Type: "AWS::Glue::MLTransform"
+    Properties:
+      Description: "https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html"
+      InputRecordTables:
+        GlueTables:
+          - DatabaseName: !Ref GlueDatabase
+            TableName: "dblp_acm_records_csv"
+      MaxRetries: 0
+      Name: "demo-xform-dblp-acm"
+      NumberOfWorkers: 10
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/${GlueServiceRole}"
+      Timeout: 2880
+      TransformParameters:
+        TransformType: "FIND_MATCHES"
+        FindMatchesParameters:
+          PrimaryKeyColumnName: "id"
+          PrecisionRecallTradeoff: 0.5
+          AccuracyCostTradeoff: 0.5
+          EnforceProvidedLabels: false
+      WorkerType: "G.2X"
+      GlueVersion: "1.0"

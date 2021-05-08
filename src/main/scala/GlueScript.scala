@@ -18,31 +18,31 @@ object GlueApp {
 
     Job.init(args("JOB_NAME"), glueContext, args.asJava)
 
-    val datasource0 = glueContext.getCatalogSource(
+    val datasource = glueContext.getCatalogSource(
       database = "demo-db-dblp-acm",
       tableName = "dblp_acm_records_csv",
       redshiftTmpDir = "",
       transformationContext = "datasource0"
     ).getDynamicFrame()
 
-    val resolvechoice1 = datasource0.resolveChoice(
+    val resolvechoice = datasource.resolveChoice(
       choiceOption = Some(ChoiceOption("MATCH_CATALOG")),
       database = Some("demo-db-dblp-acm"),
       tableName = Some("dblp_acm_records_csv"),
-      transformationContext = "resolvechoice1"
+      transformationContext = "resolvechoice"
     )
 
-    val findmatches2 = FindMatches.apply(
-      frame = resolvechoice1,
+    val findmatches = FindMatches.apply(
+      frame = resolvechoice,
       transformId = "tfm-9758e521c94afe2c93e3d58bb995618a7f2d9d5f",
-      transformationContext = "findmatches2")
+      transformationContext = "findmatches")
 
-    val single_partition = findmatches2.repartition(1)
+    val single_partition = findmatches.repartition(1)
 
-    val datasink3 = glueContext.getSinkWithFormat(
+    val datasink = glueContext.getSinkWithFormat(
       connectionType = "s3",
       options = JsonOptions("""{"path": "s3://demo-lab-05591e78-c7a7-11ea-9e7c-1f5912642e39"}"""),
-      transformationContext = "datasink3",
+      transformationContext = "datasink",
       format = "csv"
     ).writeDynamicFrame(single_partition)
     Job.commit()
