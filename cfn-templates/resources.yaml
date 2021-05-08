@@ -141,7 +141,6 @@ Resources:
         --job-bookmark-option: "job-bookmark-disable"
         --job-language: "scala"
       MaxRetries: 0
-      AllocatedCapacity: 11
       Timeout: 2880
       GlueVersion: "1.0"
       MaxCapacity: 11
