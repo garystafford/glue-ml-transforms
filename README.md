@@ -16,6 +16,8 @@ AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs
 
 Running the Glue Crawler, included in the CloudFormation Stack, is not required for tutorial.
 
+Note Glue 2.0 does not support `FindMatches` machine learning transforms. You must use Glue 1.0 for Glue Job.
+
 ## Create CloudFormation Stack
 
 In reference to step #1, above.
@@ -68,3 +70,4 @@ aws s3 cp s3://$SOURCE_BUCKET_NAME/dblp-acm/labels/dblp_acm_labels.csv \
 - [Tuning Machine Learning Transforms in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform-tuning.html)
 - [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
 - [AWS Glue: Local Development Restrictions](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#local-dev-restrictions)
+- [Glue 2.0 Features Not Supported: FindMatches machine learning transforms](https://github.com/awsdocs/aws-glue-developer-guide/blob/master/doc_source/reduced-start-times-spark-etl-jobs.md#features-not-supported)
