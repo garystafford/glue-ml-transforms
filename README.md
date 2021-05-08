@@ -1,6 +1,8 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Source code and notes for a quick start version of the AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
+Source code and notes for a quick start version of the
+AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
+.
 
 ## Workflow with this project
 
@@ -65,3 +67,4 @@ aws s3 cp s3://$SOURCE_BUCKET_NAME/dblp-acm/labels/dblp_acm_labels.csv \
 - [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
 - [Tuning Machine Learning Transforms in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform-tuning.html)
 - [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
+- [AWS Glue: Local Development Restrictions](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#local-dev-restrictions)

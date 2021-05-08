@@ -39,7 +39,6 @@ object GlueApp {
     )
 
     // FindMatches is a local development restriction but will work fine when run as Glue Job
-    // https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#local-dev-restrictions
     val findmatches = FindMatches.apply(
       frame = resolvechoice,
       transformId = mlTransformId,
