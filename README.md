@@ -32,10 +32,10 @@ aws cloudformation create-stack \
 In reference to step #3, above. Change S3 bucket name to match your environment.
 
 ```shell
-export BUCKET_NAME="glue-ml-transform-results-111222333444-us-east-1"
+export YOUR_BUCKET_NAME="glue-ml-transform-results-111222333444-us-east-1"
 
 aws s3 cp ./src/main/scala/GlueApp.scala \
-  s3://$BUCKET_NAME/demo-etl-dblp-acm
+  s3://$YOUR_BUCKET_NAME/demo-etl-dblp-acm
 ```
 
 ## Labeled Dataset Location
@@ -51,8 +51,13 @@ s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
 Retrieve original public dataset and labels from S3.
 
 ```shell
-aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/records/dblp_acm_records.csv dblp_acm_records.csv
-aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv dblp_acm_labels.csv
+export SOURCE_BUCKET_NAME="ml-transforms-public-datasets-us-east-1"
+
+aws s3 cp s3://$SOURCE_BUCKET_NAME/dblp-acm/records/dblp_acm_records.csv \
+  dblp_acm_records.csv
+
+aws s3 cp s3://$SOURCE_BUCKET_NAME/dblp-acm/labels/dblp_acm_labels.csv \
+  dblp_acm_labels.csv
 ```
 
 ## Reference
