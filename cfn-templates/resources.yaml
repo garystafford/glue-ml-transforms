@@ -44,7 +44,7 @@ Resources:
   ResultsBucket:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: !Sub "glue-ml-transform-results-${AWS::AccountId}-${AWS::Region}"
+      BucketName: !Sub "glue-ml-transform-${AWS::AccountId}-${AWS::Region}"
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
