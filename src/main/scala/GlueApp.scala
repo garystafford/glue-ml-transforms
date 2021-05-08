@@ -1,6 +1,6 @@
 import com.amazonaws.services.glue.ChoiceOption
 import com.amazonaws.services.glue.GlueContext
-import com.amazonaws.services.glue.ml.FindMatches // local development restriction
+import com.amazonaws.services.glue.ml.FindMatches // won't import locally - local development restriction
 import com.amazonaws.services.glue.util.GlueArgParser
 import com.amazonaws.services.glue.util.Job
 import com.amazonaws.services.glue.util.JsonOptions
