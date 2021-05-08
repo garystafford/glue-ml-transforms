@@ -1,6 +1,6 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Notes and source code for the
+Source code and notes for a quick start version of the
 AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
 .
 
