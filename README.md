@@ -7,7 +7,7 @@ AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs
 ## Workflow with this project
 
 1. Create the CloudFormation Stack
-2. Modify Scala Glue script's `transformId` value and bucket location in `datasink` section to match your environment
+2. Modify Scala Glue script's `mlTransformId` and `resultBucket` vars to match your environment
 3. Upload Scala Glue script to new S3 bucket
 4. Run 'Teach transform'
 5. 'Uploads labels'
@@ -34,7 +34,7 @@ aws cloudformation create-stack \
 In reference to step #3, above. Change S3 bucket name to match your environment.
 
 ```shell
-aws s3 cp ./src/main/scala/GlueScript.scala \
+aws s3 cp ./src/main/scala/GlueApp.scala \
   s3://glue-ml-transform-results-111222333444-us-east-1/demo-etl-dblp-acm
 ```
 

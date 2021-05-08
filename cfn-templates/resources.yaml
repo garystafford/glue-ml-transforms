@@ -1,14 +1,12 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Metadata:
-  Generator: "former2"
 Description: >
-  Notes and code for the AWS Tutorial: Creating a Machine Learning Transform with AWS Glue
+  AWS resources for the AWS Tutorial: Creating a Machine Learning Transform with AWS Glue
   (https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
 Parameters:
   GlueServiceRole:
     Type: String
     Default: "AWSGlueServiceRole-ml-demo"
-    Description: Glue service role.
+    Description: Glue service role name.
 Resources:
   IAMManagedPolicy:
     Type: "AWS::IAM::ManagedPolicy"
@@ -147,7 +145,7 @@ Resources:
   GlueMLTransform:
     Type: "AWS::Glue::MLTransform"
     Properties:
-      Description: "https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html"
+      Description: "Machine Learning Transform with AWS Glue"
       InputRecordTables:
         GlueTables:
           - DatabaseName: !Ref GlueDatabase

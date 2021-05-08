@@ -1,8 +1,6 @@
 import com.amazonaws.services.glue.ChoiceOption
 import com.amazonaws.services.glue.GlueContext
-import com.amazonaws.services.glue.ResolveSpec
-import com.amazonaws.services.glue.errors.CallSite
-import com.amazonaws.services.glue.ml.FindMatches
+import com.amazonaws.services.glue.ml.FindMatches // local development restriction
 import com.amazonaws.services.glue.util.GlueArgParser
 import com.amazonaws.services.glue.util.Job
 import com.amazonaws.services.glue.util.JsonOptions
@@ -11,6 +9,11 @@ import org.apache.spark.SparkContext
 import scala.collection.JavaConverters._
 
 object GlueApp {
+  // ****** CHANGE ME ******
+  var mlTransformId :String = "tfm-behuhzsrsnpm3vk8tx2sehmh9owuh8lw88jeuwdz"
+  var resultBucket :String = "s3://glue-ml-transform-111222333444-us-east-1"
+  // ***********************
+
   def main(sysArgs: Array[String]) {
     val spark: SparkContext = new SparkContext()
     val glueContext: GlueContext = new GlueContext(spark)
@@ -22,7 +25,7 @@ object GlueApp {
       database = "demo-db-dblp-acm",
       tableName = "dblp_acm_records_csv",
       redshiftTmpDir = "",
-      transformationContext = "datasource0"
+      transformationContext = "datasource"
     ).getDynamicFrame()
 
     val resolvechoice = datasource.resolveChoice(
@@ -32,19 +35,21 @@ object GlueApp {
       transformationContext = "resolvechoice"
     )
 
+    // FindMatches is a local development restriction but will work fine when run as Glue Job
+    // https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#local-dev-restrictions
     val findmatches = FindMatches.apply(
       frame = resolvechoice,
-      transformId = "tfm-b628091a9d2fac1dbbc9b423ea9e5c3f1dd29480",
+      transformId = mlTransformId,
       transformationContext = "findmatches")
 
-    val single_partition = findmatches.repartition(1)
+    val singlePartition = findmatches.coalesce(1)
 
     val datasink = glueContext.getSinkWithFormat(
       connectionType = "s3",
-      options = JsonOptions("""{"path": "s3://glue-ml-transform-111222333444-us-east-1"}"""),
+      options = JsonOptions(s"""{"path": "$resultBucket"}"""),
       transformationContext = "datasink",
       format = "csv"
-    ).writeDynamicFrame(single_partition)
+    ).writeDynamicFrame(singlePartition)
     Job.commit()
   }
 }
