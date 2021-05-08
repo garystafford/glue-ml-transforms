@@ -1,11 +1,21 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Notes and code for the AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
+Notes and code for the
+AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html).
 
 ## Reference
+
 - [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
 - [Tuning Machine Learning Transforms in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform-tuning.html)
 - [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
+
+## Process
+
+1. Create CloudFormation Stack
+2. Teach transform
+3. Uploads labels
+4. Estimate transform quality
+4. ...
 
 ## Commands
 
@@ -25,4 +35,12 @@ aws cloudformation create-stack \
     --parameters \
         ParameterKey=GlueServiceRole,ParameterValue=AWSGlueServiceRole-ml-demo \
     --capabilities CAPABILITY_NAMED_IAM
+```
+
+## Labeled Dataset Location
+
+Change Region to match your Region.
+
+```txt
+s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
 ```

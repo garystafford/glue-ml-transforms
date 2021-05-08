@@ -143,7 +143,6 @@ Resources:
       MaxRetries: 0
       Timeout: 2880
       GlueVersion: "1.0"
-      MaxCapacity: 11
       NumberOfWorkers: 5
       WorkerType: "G.2X"
   GlueMLTransform:
