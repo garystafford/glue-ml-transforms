@@ -4,7 +4,6 @@ Metadata:
 Description: >
   Notes and code for the AWS Tutorial: Creating a Machine Learning Transform with AWS Glue
   (https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
-  ** Stack does not include Glue data table in database or ML Transform resources
 Parameters:
   GlueServiceRole:
     Type: String
