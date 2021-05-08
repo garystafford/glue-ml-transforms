@@ -1,6 +1,6 @@
 # Creating a Machine Learning Transform with AWS Glue
 
-Notes and sourcecode for the
+Notes and source code for the
 AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/machine-learning-transform-tutorial.html)
 .
 
@@ -10,13 +10,11 @@ AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs
 2. Modify Scala Glue script's `mlTransformId` and `resultBucket` vars to match your environment
 3. Upload Scala Glue script to new S3 bucket
 4. Run 'Teach transform'
-5. 'Uploads labels'
+5. Run 'Uploads labels'
 6. Run 'Estimate transform quality'
 7. Run the Glue Job containing uploaded Scala Glue script
 
-## Useful Commands
-
-### Create CloudFormation Stack
+## Create CloudFormation Stack
 
 In reference to step #1, above.
 
@@ -29,26 +27,28 @@ aws cloudformation create-stack \
     --capabilities CAPABILITY_NAMED_IAM
 ```
 
-### Copy Script to S3
+## Copy Script to S3
 
 In reference to step #3, above. Change S3 bucket name to match your environment.
 
 ```shell
+export BUCKET_NAME="glue-ml-transform-results-111222333444-us-east-1"
+
 aws s3 cp ./src/main/scala/GlueApp.scala \
-  s3://glue-ml-transform-results-111222333444-us-east-1/demo-etl-dblp-acm
+  s3://$BUCKET_NAME/demo-etl-dblp-acm
 ```
 
 ## Labeled Dataset Location
 
-In reference to step #5, above. Change Region to match your environment.
+In reference to step #5, above.
 
 ```txt
 s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
 ```
 
-### Optional: Retrieve Datasets from S3.
+## Optional: Retrieve Public Datasets from S3.
 
-Retrieve original dataset and labels from S3.
+Retrieve original public dataset and labels from S3.
 
 ```shell
 aws s3 cp s3://ml-transforms-public-datasets-us-east-1/dblp-acm/records/dblp_acm_records.csv dblp_acm_records.csv
