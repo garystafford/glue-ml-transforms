@@ -14,7 +14,7 @@ AWS [Tutorial: Creating a Machine Learning Transform with AWS Glue](https://docs
 6. Run 'Estimate transform quality'
 7. Run the Glue Job containing uploaded Scala Glue script
 
-Running the Glue Crawler, included in the CloudFormation Stack, is not required for tutorial.
+Running the Glue Crawler, included in the CloudFormation Stack, is not required for the tutorial.
 
 Note Glue 2.0 does not support `FindMatches` machine learning transforms. You must use Glue 1.0 for Glue Job.
 
@@ -33,7 +33,7 @@ aws cloudformation create-stack \
 
 ## Copy Script to S3
 
-In reference to step #3, above. Change S3 bucket name to match your environment.
+In reference to step #3, above. Change the S3 bucket name to match your environment.
 
 ```shell
 export YOUR_BUCKET_NAME="glue-ml-transform-results-111222333444-us-east-1"
@@ -50,7 +50,7 @@ In reference to step #5, above.
 s3://ml-transforms-public-datasets-us-east-1/dblp-acm/labels/dblp_acm_labels.csv
 ```
 
-## Optional: Retrieve Public Datasets from S3.
+## Optional: Retrieve Public Datasets
 
 Retrieve original public dataset and labels from S3.
 
