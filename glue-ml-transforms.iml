@@ -10,6 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.13.5" level="application" />
+    <orderEntry type="library" name="scala-sdk-2.12.8" level="application" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.1" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:AWSGlueETL:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk:1.11.774" level="project" />
