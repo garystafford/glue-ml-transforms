@@ -71,3 +71,7 @@ aws s3 cp s3://$SOURCE_BUCKET_NAME/dblp-acm/labels/dblp_acm_labels.csv \
 - [Developing and Testing ETL Scripts Locally Using the AWS Glue ETL Library](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html)
 - [AWS Glue: Local Development Restrictions](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-libraries.html#local-dev-restrictions)
 - [Glue 2.0 Features Not Supported: FindMatches machine learning transforms](https://github.com/awsdocs/aws-glue-developer-guide/blob/master/doc_source/reduced-start-times-spark-etl-jobs.md#features-not-supported)
+
+---
+
+<i>The contents of this repository represent my viewpoints and not of my past or current employers, including Amazon Web Services (AWS). All third-party libraries, modules, plugins, and SDKs are the property of their respective owners.</i>
